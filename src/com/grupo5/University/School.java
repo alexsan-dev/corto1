@@ -4,6 +4,7 @@ public class School {
     // ATRIBUTOS
     private String name;
     private int students;
+    private int courses;
     boolean isFaculty;
 
     // VALORES POR DEFECTO
@@ -14,15 +15,17 @@ public class School {
     }
 
     // ASIGNAR VALORES
-    public School(String name, int students, boolean isFaculty){
+    public School(String name, int students, boolean isFaculty, int courses){
         this.name = name;
         this.students = students;
         this.isFaculty = isFaculty;
+        this.courses = courses;
     }
 
     // RETORNAR STRING CON INFORMACION
+    @Override
     public String toString() {
         String facultyStr = isFaculty ? "Facultad de ":"Escuela de ";
-        return facultyStr + name + " con " + students + " estudiantes.";
+        return facultyStr + name + " con " + students + " estudiantes" + " y " + courses + " cursos";
     }
 }

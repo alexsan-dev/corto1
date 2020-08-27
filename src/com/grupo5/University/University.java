@@ -2,6 +2,7 @@ package com.grupo5.University;
 
 public class University {
     // ATRIBUTOS
+    protected String id;
     protected String name;
     protected School[] schools;
     protected boolean isPublic;
@@ -16,8 +17,9 @@ public class University {
     }
 
     // ASIGNAR VALORES INICIALES
-    public University(String name, School[] schools, boolean isPublic, int students){
+    public University(String name, String id, School[] schools, boolean isPublic, int students){
         this.name = name;
+        this.id = id;
         this.schools = schools;
         this.isPublic = isPublic;
         this.students = students;
@@ -26,6 +28,11 @@ public class University {
     // ASIGNAR NOMBRE
     public void setName(String name) {
         this.name = name;
+    }
+
+    // ASIGNAR ID
+    public void setId(String id) {
+        this.id = id;
     }
 
     // ASIGNAR ESCUELAS
@@ -47,9 +54,9 @@ public class University {
         schools = tmpSchools;
     }
 
-    public void addSchool(String name, int students, boolean isFaculty){
+    public void addSchool(String name, int students, boolean isFaculty, int courses){
         // CREAR NUEVA ESCUELA
-        School tmpSchool = new School(name, students, isFaculty);
+        School tmpSchool = new School(name, students, isFaculty, courses);
 
         // AGREGAR AL ARRAY
         this.addSchool(tmpSchool);
@@ -66,6 +73,7 @@ public class University {
     }
 
     // MOSTRAR INFORMACION
+    @Override
     public String toString() {
         // TITULO
         String isPublicStr = isPublic?"publica ":"privada ";
