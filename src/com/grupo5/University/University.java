@@ -76,8 +76,7 @@ public class University {
     @Override
     public String toString() {
         // TITULO
-        String isPublicStr = isPublic?"publica ":"privada ";
-        String title =  "Universidad " + isPublicStr + name + " cuenta con " + schools.length + " areas:\n";
+        String title = getInfo();
 
         // MOSTRAR ESCUELAS
         String schoolsStr = "";
@@ -87,5 +86,19 @@ public class University {
 
         // RETORNAR TEXTO
         return title + schoolsStr;
+    }
+
+    // OBTENER INFORMACION DE ESCUELAS
+    public int getSchoolsLength() {
+        return schools.length;
+    }
+
+    // OBTENER INFORMACION
+    public String getInfo(){
+        // TITULO
+        String isPublicStr = isPublic?"publica ":"privada ";
+        String title =  "Universidad " + isPublicStr + name + " cuenta con " + schools.length + " areas:\n";
+
+        return title;
     }
 }
