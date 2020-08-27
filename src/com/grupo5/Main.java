@@ -7,9 +7,6 @@ import com.grupo5.University.University;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        new University();
-        new Hospital();
-        new Country();
+
     }
 }
