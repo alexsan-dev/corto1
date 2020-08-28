@@ -51,3 +51,7 @@ System.out.println(No de agentes de seguridad + seguridad);
     
     
 }
+
+//CLASES HIJAS
+public class Quirofamo{} 
+public class Intensivo{}
