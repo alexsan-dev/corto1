@@ -1,8 +1,12 @@
 public class Departamento extends University{
-  String name;
+  private String name;
   
   public Departamento(){
     name = "";
+  }
+  
+  public void setName(String name){
+    this.name = name;
   }
   
   public String getName(){
