@@ -50,7 +50,10 @@ public void tazaMortalidad(int FemalePopulation,int MalePopulation){
         double x = FemalePopulation*0.02 + MalePopulation*0.01;
         System.out.println("La taza de mortalidad es: "+x+" personas al año");
     }    
-    
+ public  void tazaNatalidad(int FemalePopulation,int MalePopulation){
+        double x = FemalePopulation*0.01 + MalePopulation*0.02;
+        System.out.println("La taza de mortalidad es: "+x+" personas al año");
+    }   
     
 //CLASES HIJAS
 public class Department{} 
