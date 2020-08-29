@@ -10,6 +10,7 @@ public  int  limpieza ;
 public  int  Seguridad ;
 public int hospital;
 public int visitantes;
+public int suministros;
 
    // VALORES POR DEFECTO
     public Hospital (){
@@ -20,6 +21,7 @@ public int visitantes;
         enfermeros= 100;
         hospital=3;
         visitantes=500;
+        suministros=300;
     } 
 
 //Constructor de asignaciones
@@ -32,6 +34,7 @@ public Hospital (String name, int doctores, int enfermeros,int pacientes,int lim
     this.seguridad=seguridad;
     this.hospital=hospital;
     this.visitantes=visitantes;
+    this.suministros=suministros;
 }
 
 //Metodos
@@ -43,35 +46,35 @@ this.doctores=doctores;
 this.hospital=hospital;    
 }
     public  void   pacientes () {
-System.out.println(No de pacientes + pacientes);
+System.out.println("No de pacientes + pacientes");
 }
 
     public  void   limpieza () {
-System.out.println(No de empleados de limpieza + limpieza);
+System.out.println("No de empleados de limpieza + limpieza");
 }
 
     public  void  seguridad () {
-System.out.println(No de agentes de seguridad + seguridad);
+System.out.println("No de agentes de seguridad + seguridad");
 }
 
     public void enfermeros(){
-System.out.println(No de enfermeros + enfermeros);
+System.out.println("No de enfermeros + enfermeros");
 }
     
     public void sedesHospital(){
-System.out.println(No de hospital + hospital);
+System.out.println("No de hospital + hospital");
 }
     
     public void pacientes(){
 this.pacientes=pacientes;        
 }
     
-    public void area(){
- area();
+    public void suministros(){
+System.out.println("No de suministros + suministros");
 }
     
     public void visitantes(){
-System.out.println(No. de visitantes + visitantes);        
+System.out.println("No. de visitantes + visitantes");        
 }
         
     
