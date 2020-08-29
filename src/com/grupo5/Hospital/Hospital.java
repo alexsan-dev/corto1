@@ -15,6 +15,8 @@ public  int  Seguridad ;
        pacientes = 300; 
         limpieza = 100;
         seguridad = 75;
+        doctores= 200;
+        enfermeros= 100;
     } 
 
 //Constructor de asignaciones
@@ -33,7 +35,7 @@ this.doctores=doctores;
 }
     
 public Hospital(){
-    
+this.enfermeros=enfermos;    
 }
     public  void   pacientes () {
 System.out.println(No de pacientes + pacientes);
@@ -48,10 +50,14 @@ System.out.println(No de empleados de limpieza + limpieza);
 System.out.println(No de agentes de seguridad + seguridad);
 }
 
-    
+    public void enfermeros(){
+System.out.println(No de enfermeros + enfermeros);
+}
+        
     
 }
 
 //CLASES HIJAS
 public class Quirofamo{} 
 public class Intensivo{}
+public class Pediatria{}
