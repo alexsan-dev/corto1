@@ -46,7 +46,10 @@ System.out.println(President);
 public void MalePopulationUpdate(int malepopulation){
 MalePopulation=malepopulation;
 }
-    
+public void tazaMortalidad(int FemalePopulation,int MalePopulation){
+        double x = FemalePopulation*0.02 + MalePopulation*0.01;
+        System.out.println("La taza de mortalidad es: "+x+" personas al año");
+    }    
     
     
 //CLASES HIJAS
