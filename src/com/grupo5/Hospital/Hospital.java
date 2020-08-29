@@ -58,6 +58,6 @@ System.out.println(No de enfermeros + enfermeros);
 }
 
 //CLASES HIJAS
-public class Quirofamo{} 
+public class Quirofano{} 
 public class Intensivo{}
 public class Pediatria{}
