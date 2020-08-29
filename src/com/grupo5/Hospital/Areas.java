@@ -1,4 +1,4 @@
-public class Areas extends Hosital{
+public class Areas extends Hospital{
  
 
   public Areas{
