@@ -62,7 +62,10 @@ public void tazaMortalidad(int FemalePopulation,int MalePopulation){
         double x = FemalePopulation*0.1 + MalePopulation*0.15;
         System.out.println("La poblacion mayor de 18 años es de: "+x);
     }    
-        
+     public void terceraEdad(int FemalePopulation,int MalePopulation){
+        double x = FemalePopulation*0.1 + MalePopulation*0.12;
+        System.out.println("La poblacion de adultos de la tercera edad es de: "+x);
+    }    
         
         
 //CLASES HIJAS
