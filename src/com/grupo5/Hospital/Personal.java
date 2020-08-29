@@ -1,4 +1,4 @@
-public class Personal extends University{
+public class Personal extends Hospital{
   String name;
   int id;
   
