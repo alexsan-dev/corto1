@@ -46,23 +46,23 @@ public class Hospital {
         }
 
         public void Showpacientes() {
-            System.out.println("No de pacientes + pacientes");
+            System.out.println("No de pacientes" + pacientes);
         }
 
         public void limpieza() {
-            System.out.println("No de empleados de limpieza + limpieza");
+            System.out.println("No de empleados de limpieza" + limpieza);
         }
 
         public void seguridad() {
-            System.out.println("No de agentes de seguridad + seguridad");
+            System.out.println("No de agentes de seguridad" + seguridad);
         }
 
         public void enfermeros() {
-            System.out.println("No de enfermeros + enfermeros");
+            System.out.println("No de enfermeros" + enfermeros);
         }
 
         public void sedesHospital() {
-            System.out.println("No de hospital + hospital");
+            System.out.println("No de hospital" + hospital);
         }
 
         public void pacientes() {
@@ -70,13 +70,11 @@ public class Hospital {
         }
 
         public void suministros() {
-            System.out.println("No de suministros + suministros");
+            System.out.println("No de suministros" + suministros);
         }
 
         public void visitantes() {
-            System.out.println("No. de visitantes + visitantes");
+            System.out.println("No. de visitantes" + visitantes);
         }
 
     }
-}
-

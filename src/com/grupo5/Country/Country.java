@@ -68,10 +68,5 @@ public void tazaMortalidad(int FemalePopulation,int MalePopulation){
         System.out.println("La poblacion de adultos de la tercera edad es de: "+x);
     }    
         
-        
-//CLASES HIJAS
-public class Department{} 
-public class Municipio{}
-public class State{}
-public class Capital{}
+
 }

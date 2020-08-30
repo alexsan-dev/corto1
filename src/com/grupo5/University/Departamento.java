@@ -1,3 +1,5 @@
+package com.grupo5.University;
+
 public class Departamento extends University{
   private String name;
   
